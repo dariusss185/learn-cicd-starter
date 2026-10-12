@@ -1,5 +1,5 @@
 package main
-//helo
+
 import (
 	"encoding/json"
 	"log"
@@ -27,6 +27,7 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 	if err != nil {
 		log.Printf("Error marshalling JSON: %s", err)
 		w.WriteHeader(500)
+		//helo
 		return
 	}
 	w.WriteHeader(code)
