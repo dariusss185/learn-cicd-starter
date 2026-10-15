@@ -33,5 +33,5 @@ jobs:
       - name: 'Use gcloud CLI'
         run: 'gcloud info'
       
-      - name: 'Build docker and push'
+      - name: 'gcloud builds submit'
         run: 'gcloud builds submit --tag us-central1-docker.pkg.dev/$(gcloud config get-value project)/notely-ar-repo/notely:latest .'
